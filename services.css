@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Questrial";
+    src: url(./Fonts/Questrial-Regular.ttf) format("truetype");
+}
+
+body {
+    font-family: "Questrial", sans-serif;
+    background-color: #FFFDF2;
+}
+
+header {
+    background-color: #FFFDF2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center !important;
+    padding: 1rem 2.5%;
+    width: 85%;
+    position: fixed;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    height: 92.5px;
+}
+
+.header-svg {
+    text-decoration: none;
+    color: #0A2323;
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.header-svg>p {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.header-svg svg [data-color="1"] {
+    fill: #0A2323;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    padding: 0;
+    margin: 0;
+    gap: 5rem;
+}
+
+nav ul li {
+    color: #0A2323;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+}
+
+nav ul li:last-of-type {
+    display: flex;
+    align-items: center !important;
+    gap: 0.5rem;
+}
+
+nav ul li svg path {
+    fill: #0A2323;
+}
+
+.login-svg {
+    display: flex;
+    gap: 1rem;
+}
+
+nav button {
+    background-color: #0A2323;
+    color: #FFFDF2;
+    border: 1px solid #0A2323;
+    font-weight: 100;
+    padding: 0.42rem 2.6rem;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+nav button:hover {
+    background-color: #FFFDF2;
+    border: 1px solid #0A2323;
+    color: #0A2323;
+}
+
+nav ul li:not(:last-of-type) a {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+
+nav ul li:not(:last-of-type) a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li:not(:last-of-type) a:hover::after {
+    transform: scaleX(1);
+}
+
+nav ul li:last-of-type .login-text {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    display: inline-block;
+}
+
+nav ul li:last-of-type:hover .login-text {
+    opacity: 0.6;
+}
+
+.menu-toggle {
+    text-decoration: none;
+    color: #0A2323;
+    display: none;
+}
+
+.head-text {
+    color: #0A2323;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.head-text1 {
+    font-size: 3.5rem;
+}
+
+.head-text2 {
+    font-size: 1.375rem;
+    font-weight: lighter;
+}
+
+.line {
+    width: 85%;
+    border: #0A23231A 0.5px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.line2 {
+    width: 85%;
+    border: #0A23231A 0.5px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.main-services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 7.5%;
+}
+
+.main-services-img-link img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.main-services-text-head {
+    font-size: 1.5rem;
+    color: #0A2323;
+    text-decoration: none;
+}
+
+.main-services-text-paragraph {
+    font-size: 1.125rem;
+    font-weight: 300;
+    width: 553px;
+}
+
+.main-services-price {
+    font-size: 1.1rem;
+    color: #0A2323;
+}
+
+.main-services-button button {
+    background-color: #0A2323;
+    color: #FFFDF2;
+    border: 1px solid #0A2323;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+}
+
+.main-services-button button:hover {
+    color: #0A2323;
+    background-color: transparent;
+    border: 1px solid #0A2323;
+}
+
+footer {
+    margin-top: 80px;
+}
+
+.footer-image {
+    width: 100%;
+    height: 728px;
+    object-fit: cover;
+}
+
+
+address {
+    font-style: normal;
+}
+
+
+.site-footer {
+    background-color: #FFF7BD;
+    color: #0A2323;
+    padding: 60px 30px;
+    font-size: 1rem;
+    height: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+
+.footer-about {
+    flex-basis: 20%;
+}
+
+.footer-logo {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.diamond-icon {
+    margin-right: 8px;
+}
+
+.footer-book-button {
+    display: inline-block;
+    background-color: #0A2323;
+    color: #FFFDF2 !important;
+    padding: 1rem 3.8rem;
+    border: #0A2323 solid 1px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.footer-book-button:hover {
+    background-color: transparent;
+    color: #0A2323 !important;
+}
+
+
+.footer-heading {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #0A2323;
+}
+
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+
+.footer-column a {
+    color: #0A2323;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #1a4a4a;
+}
+
+
+.footer-contact address {
+    line-height: 1.7;
+}
+
+
+.footer-social {
+    margin-top: 25px;
+}
+
+.footer-social p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.social-links a {
+    width: 24px;
+    height: 24px;
+    margin-right: 18px;
+    color: #0A2323;
+}
+
+.social-links a:last-child {
+    margin-right: 0;
+}
+
+.back-arrow a {
+    display: none;
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: none;
+        padding: 0.8rem 5%;
+        height: 70px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        border-radius: 0;
+    }
+    .header-svg {
+        margin-left: 0;
+    }
+    .header-svg > p {
+        font-size: 18px;
+    }
+    nav ul {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        margin-right: 5%;
+    }
+
+   .head-text {
+    margin-top: 150px;
+    padding: 0 15px;
+}
+
+.head-text1 {
+    font-size: 2.5rem;
+}
+
+.head-text2 {
+    font-size: 1.2rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line, .line2 {
+    display: none;
+}
+
+.main-services {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 30px 20px;
+    gap: 0px;
+}
+
+.main-services-img-link img {
+    width: 300px;
+    height: 180px;
+    margin-bottom: 15px;
+}
+
+.main-services-text-head {
+    font-size: 1.3rem;
+}
+
+.main-services-text-paragraph {
+    width: 300px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.main-services-price {
+    font-size: 1rem;
+    margin-top: 5px;
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+}
+
+.main-services-button {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-services-button button {
+    width: 300px;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-column {
+        min-width: auto;
+        flex-basis: auto !important;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-column:last-child {
+        margin-bottom: 0;
+    }
+    .footer-logo {
+        justify-content: center;
+    }
+    .footer-book-button {
+        padding: 10px 30px;
+    }
+    .social-links {
+        text-align: center;
+    }
+    .back-arrow a {
+        display: inline-block;
+        position:fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 1000;
+        text-decoration: none;
+        color: #0A2323;
+    }
+}

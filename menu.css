@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Questrial";
+    src: url(./Fonts/Questrial-Regular.ttf) format("truetype");
+}
+
+body {
+    font-family: "Questrial", sans-serif;
+    background-color: #FFFDF2;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.login-svg {
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+    color: #0A2323;
+}
+
+.login-text {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.head i {
+    font-size: 20px;
+    color: #0A2323;
+}
+
+
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+    margin-top: 40px;
+}
+
+nav ul li {
+    color: #0A2323;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+}
+
+nav button {
+    background-color: #0A2323;
+    color: #FFFDF2;
+    border: 1px solid #0A2323;
+    font-weight: 100;
+    padding: 0.42rem 2.6rem;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+nav button:hover {
+    background-color: #FFFDF2;
+    border: 1px solid #0A2323;
+    color: #0A2323;
+}
